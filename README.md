@@ -1,2 +1,2 @@
-# c--opencv-gui
+# cpp-electron-opencv-gui
 Solo exploratory project for a Windows based GUI that integrates configured OpenCV workflows.
