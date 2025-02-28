@@ -1,0 +1,36 @@
+{
+  "name": "opencv",
+  "productName": "opencv",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cmd /c \"cd src/vue && npm run build\" && cmd /c \"node compile.js\" && electron-forge start",
+    "package": "cmd /c \"cd src/vue && npm run build\" && cmd /c \"node compile.js\" && electron-forge package",
+    "make": "cmd /c \"cd src/vue && npm run build\" && cmd /c \"node compile.js\" && electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build:cpp": "node scripts/compile_cpp.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "matthew",
+    "email": "matthew@tilliestudios.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-overlay-window": "^3.3.0",
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.7.0",
+    "@electron-forge/maker-deb": "^7.7.0",
+    "@electron-forge/maker-rpm": "^7.7.0",
+    "@electron-forge/maker-squirrel": "^7.7.0",
+    "@electron-forge/maker-zip": "^7.7.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.7.0",
+    "@electron-forge/plugin-fuses": "^7.7.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "34.3.0"
+  }
+}
